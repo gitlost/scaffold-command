@@ -18,7 +18,7 @@ Feature: Scaffold install-wp-tests.sh tests
     And I run `wp plugin path`
     And save STDOUT as {PLUGIN_DIR}
     And I run `wp scaffold plugin hello-world`
-    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root -pmb`
+    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root`
     And I try `rm -fr /tmp/behat-wordpress-tests-lib`
     And I try `rm -fr /tmp/behat-wordpress`
 
@@ -75,7 +75,7 @@ Feature: Scaffold install-wp-tests.sh tests
     And I run `wp plugin path`
     And save STDOUT as {PLUGIN_DIR}
     And I run `wp scaffold plugin hello-world`
-    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root -pmb`
+    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root`
     And I try `rm -fr /tmp/behat-wordpress-tests-lib`
     And I try `rm -fr /tmp/behat-wordpress`
 
@@ -136,7 +136,7 @@ Feature: Scaffold install-wp-tests.sh tests
     And I run `wp plugin path`
     And save STDOUT as {PLUGIN_DIR}
     And I run `wp scaffold plugin hello-world`
-    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root -pmb`
+    And I run `echo "DROP DATABASE IF EXISTS wordpress_behat_test" | mysql -u root`
     And I try `rm -fr /tmp/behat-wordpress-tests-lib`
     And I try `rm -fr /tmp/behat-wordpress`
 
