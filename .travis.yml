@@ -50,6 +50,8 @@ before_install:
 install:
   - composer require wp-cli/wp-cli:dev-master
   - composer install
+  - tar --version
+  - gzip --version
   - bash bin/install-package-tests.sh
 
 before_script:
